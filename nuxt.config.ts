@@ -11,6 +11,18 @@ export default defineNuxtConfig({
     ],
   },
 
+    devtools: { enabled: true },
+
+  ssr: false,
+
+  nitro: {
+    preset: 'static'
+  },
+
+  app: {
+    baseURL: '/'
+  },
+
   modules: [
     '@nuxt/a11y',
     '@nuxt/eslint',
